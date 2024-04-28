@@ -114,7 +114,7 @@ public class RecursionSolutions {
 
     public static int[] reversedArrayFunction(int[] reversedArray,int index,int[] nums,int i  ){
 
-        if(i ==nums.length-1){
+        if(i == nums.length-1){
             reversedArray[i] = nums[index];
             return reversedArray;
         }
