@@ -138,7 +138,7 @@ public class RecursionSolutions {
 
     /* TODO Check palindrome in string using recursion */
 
-    public static Boolean  isStringPalindrome(StringBuilder reversedString,char[] chr,int n){
+    public static boolean  isStringPalindrome(StringBuilder reversedString,char[] chr,int n){
         if(n ==0){
             reversedString.append(chr[0]);
             String originalStr = new String(chr);
