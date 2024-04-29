@@ -249,7 +249,53 @@ return arr;
     /*TODO You are given an array 'a' of size 'n' and an integer 'k'.
            Find the length of the longest subarray of 'a' whose sum is equal to 'k'.*/
 
+    public static int longestSubArrayWithSumKUsingSlidingWindow(int[] arr, int k) {
+        int start = 0;
+        int maxLength = 0;
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+            if(sum > k){
+                sum -= arr[start];
+                start++;
+            }
+            if(sum ==k){
+                maxLength = Math.max(maxLength, i - start+1);
+            }
+        }
+        return maxLength;
+    }
+    /*TODO Using Hashing*/
 
+    public static int longestSubArrayWithSumKUsingHashing(int[] arr, int k) {
+        int maxLen =0;
+
+        int currentSum= 0;
+
+        Map<Integer,Integer> map = new HashMap<>();
+        map.put(0,-1); //
+
+        for(int i =0;i<arr.length;i++){
+
+            currentSum += arr[i];
+
+            if(currentSum == k){
+                maxLen = i+1;
+            }
+
+            if(map.containsKey(currentSum-k)){
+                maxLen = Math.max(maxLen, i-map.get(currentSum-k));
+            }
+
+            if (!map.containsKey(currentSum)) {
+                map.put(currentSum, i);
+            }
+
+        }
+
+        return maxLen;
+
+    }
 
 
 
