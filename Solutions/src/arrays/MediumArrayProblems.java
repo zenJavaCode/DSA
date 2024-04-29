@@ -7,7 +7,7 @@ public class MediumArrayProblems {
     public static void main(String[] args) {
         String str = "abcabcbb";
         int longestLength = longestSubStringWithoutRepeatingCharacters(str);
-        System.out.println("Length of the longest substring without repeating characters: " + longestLength);
+        System.out.println("Length of the  longest substring without repeating characters: " + longestLength);
 
     }
 
