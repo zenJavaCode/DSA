@@ -1,6 +1,8 @@
 package arrays;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 
 public class MediumArrayProblems {
 
@@ -25,14 +27,12 @@ public class MediumArrayProblems {
            windowSum += nums[i] - nums[i - k];
            maxSum = Math.max(maxSum, windowSum);
         }
-
         return maxSum;
     }
 
     /*TODO Longest Substring Without Repeating Characters:*/
 
     public static int longestSubStringWithoutRepeatingCharacters(String s) {
-
         int n = s.length();
         int start = 0;
         int end = 0;
@@ -51,4 +51,35 @@ public class MediumArrayProblems {
         }
         return maxLen;
     }
+
+    /*TODO : longest subarray with sum k includes positive numbers only*/
+
+    public static int lengthOfLongestSubArrayWithSumK(int[] a ,int k){
+
+       int n = a.length;
+       int sum =0;
+       int maxLen =0;
+       Map<Integer,Integer> map = new HashMap<>();
+       for(int i =0;i<n;i++){
+
+           sum+=a[i];
+
+           if(sum ==k){
+               maxLen = Math.max(maxLen, i + 1);
+           }
+           int rem = sum-k;
+           if(map.containsKey(rem)){
+               int len = i - map.get(rem);
+              maxLen = Math.max(maxLen, len);
+           }
+
+           if (!map.containsKey(sum)) {
+               map.put(sum, i);
+           }
+
+       }
+return maxLen;
+
+    }
+
 }
