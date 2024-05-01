@@ -1,9 +1,6 @@
 package arrays;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
+import java.util.*;
 
 public class MediumArrayProblems {
 
@@ -194,9 +191,71 @@ public class MediumArrayProblems {
             if(!map.containsKey(v[i])){
                 map.put(v[i],map.getOrDefault(v[i],0)+1);
             }
-
         }
         return -1;
     }
 
+    /*TODO longestSubarrayWithSumK Using Sliding Window*/
+
+    public static int longestSubarrayWithSumK(int[] a, long k) {
+
+        int left = 0,right =0;
+        long sum =0;
+        int max =0;
+        while(right<a.length){
+            sum+=a[right++];
+            if(sum >k){
+                sum-= a[left++];
+            }
+            if(sum==k){
+                max = Math.max(max,right-left);
+            }
+        }
+        return max;
+    }
+
+
+
+    /*TODO Best time to buy an sell a stock
+           Return the best profit you made. */
+
+
+    public static int bestTimeToBuySell(int[]a){
+        int maxProfit =0;
+        int minPrice = Integer.MAX_VALUE;
+        for(int price :a){
+            minPrice = Math.min(minPrice,price);
+            maxProfit = Math.max(maxProfit,price-minPrice);
+        }
+        return maxProfit;
+    }
+
+    /*TODO Rearrange the array in alternating positive and negative items in a array*/
+
+    public static int[] reArrangeElements(int[] a){
+        int posIdx =0;
+        int negIdx =1;
+        int[] temp = new int[a.length];
+        for(int i =0;i<a.length;i++){
+
+            if(a[i] >=0){
+                temp[posIdx] = a[i];
+                 posIdx = posIdx+2;
+            }else{
+                temp[negIdx] = a[i];
+                negIdx = negIdx +2;
+            }
+
+        }
+        return temp;
+    }
+
+    /*TODO: Next Permutation*/
+
+    public static List< Integer > nextGreaterPermutation(List< Integer > a) {
+        // [1,2,3] -> [3,2,1] -> [2,1,3]
+
+        
+        return a;
+    }
 }
