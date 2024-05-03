@@ -122,13 +122,13 @@ Example:
 Input: 'arr' = [“abcd”, “abc”, “abref”, “abcde”]
 Output: ab*/
 
-    public static String commonPrefix(String []arr,int n){
+    public static String commonPrefix(String[] arr, int n) {
         StringBuilder result = new StringBuilder();
         Arrays.sort(arr);
         char[] firstArr = arr[0].toCharArray();
-        char[] last = arr[arr.length-1].toCharArray();
-        for(int i =0;i<firstArr.length;i++){
-            if(firstArr[i]!=last[i]){
+        char[] last = arr[arr.length - 1].toCharArray();
+        for (int i = 0; i < firstArr.length; i++) {
+            if (firstArr[i] != last[i]) {
                 break;
             }
             result.append(firstArr[i]);
@@ -157,10 +157,10 @@ Other examples include:
 
     public static boolean isAnagram(String str1, String str2) {
         //Your code goes here
-        if(str1.length() != str2.length()){
+        if (str1.length() != str2.length()) {
             return false;
         }
-        HashMap<Character,Integer> map = new HashMap<>();
+        HashMap<Character, Integer> map = new HashMap<>();
         for (int i = 0; i < str1.length(); i++) {
             char ch = str1.charAt(i);
             map.put(ch, map.getOrDefault(ch, 0) + 1);
@@ -184,16 +184,17 @@ Other examples include:
     /*TODO: Given two strings s and goal, return true if and only if s can become goal after some number of shifts on s.
             A shift on s consists of moving the leftmost character of s to the rightmost position.*/
     public boolean rotateString(String s, String goal) {
-        for(int i =0;i<s.length();i++){
+        for (int i = 0; i < s.length(); i++) {
             String result = rotateByOne(s);
-            if(result.equalsIgnoreCase(goal)){
+            if (result.equalsIgnoreCase(goal)) {
                 return true;
             }
         }
         return false;
 
     }
-    public static String rotateByOne(String s){
+
+    public static String rotateByOne(String s) {
         StringBuilder sb = new StringBuilder();
         char c = s.charAt(0);
         for (int i = 1; i < s.length(); i++) {
@@ -204,22 +205,45 @@ Other examples include:
     }
 
     /*TODO Is Isomorphic Strings*/
-    public boolean isIsomorphic(String s, String t) {
-        Map<Character, Integer> charToIndex_s = new HashMap<>();
-        Map<Character, Integer> charToIndex_t = new HashMap<>();
+//    public boolean isIsomorphic(String s, String t) {
+//        return false;
+//    }
 
-        for (Integer i = 0; i < s.length(); ++i)
-            if (charToIndex_s.put(s.charAt(i), i) != charToIndex_t.put(t.charAt(i), i))
+    /*TODO Palindrome check*/
+
+    public static boolean isPalindrome(String s) {
+        int left = 0, right = s.length() - 1;
+        while (left < right) {
+            if (s.charAt(left) != s.charAt(right)) {
                 return false;
-
+            }
+            left++;
+            right--;
+        }
         return true;
     }
 
 
+    /*TODO Check if a string is subsquence of other
+    *       Ex:- s1 = "ABCD",s2 = "AD" return true;*/
 
-
-
-
+    public static boolean isSubSequence(String s, String t) {
+        // naive solution
+        int i =0;
+        int j =0;
+        for (i = 0, j =0; i < s.length(); i++) {
+            if(s.charAt(i) == t.charAt(j)) {
+                i++;j++;
+            }else{
+                i++;
+            }
+        }
+        if(j == s.length()) {
+            return true;
+        }else{
+            return false;
+        }
+    }
 
 
 
