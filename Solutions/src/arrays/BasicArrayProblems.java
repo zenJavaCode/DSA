@@ -5,33 +5,33 @@ import java.util.stream.Collectors;
 
 public class BasicArrayProblems {
 
-    public static int[] mergeTwoArrayUsingHashSet(int[] a , int[] b){
-        Set<Integer> set =  new HashSet<Integer>();
-        for(int num :a){
+    public static int[] mergeTwoArrayUsingHashSet(int[] a, int[] b) {
+        Set<Integer> set = new HashSet<Integer>();
+        for (int num : a) {
             set.add(num);
         }
-        for(int num :b){
+        for (int num : b) {
             set.add(num);
         }
         int[] array = new int[set.size()];
-       Iterator<Integer> it =  set.iterator();
-       while(it.hasNext()){
-           array[it.next()]=it.next();
-       }
+        Iterator<Integer> it = set.iterator();
+        while (it.hasNext()) {
+            array[it.next()] = it.next();
+        }
         return array;
     }
 
 
-    public static List<Integer> mergeTwoArrayUsingLinkedList(int[] a , int[] b){
+    public static List<Integer> mergeTwoArrayUsingLinkedList(int[] a, int[] b) {
 
         List<Integer> list = new ArrayList<>();
-        for(int num :a){
+        for (int num : a) {
             list.add(num);
         }
-        for(int num :b){
+        for (int num : b) {
             list.add(num);
         }
-       List<Integer> sortedList = list.stream().sorted().collect(Collectors.toList());
+        List<Integer> sortedList = list.stream().sorted().collect(Collectors.toList());
         return sortedList;
     }
 
@@ -44,32 +44,32 @@ public class BasicArrayProblems {
 
 */
 
-    public static List<Integer> mergeTwoArrayUsingTwoPointer(int[] a , int[] b){
-int i = 0, j = 0;
-List<Integer> Union = new ArrayList<>();
-int n = a.length;
-int m = b.length;
+    public static List<Integer> mergeTwoArrayUsingTwoPointer(int[] a, int[] b) {
+        int i = 0, j = 0;
+        List<Integer> Union = new ArrayList<>();
+        int n = a.length;
+        int m = b.length;
         while (i < n && j < m) {
-            if (a[i] <= b[j]){
-                if (Union.size() == 0 || Union.get(Union.size()-1) != a[i])
-                Union.add(a[i]);
+            if (a[i] <= b[j]) {
+                if (Union.size() == 0 || Union.get(Union.size() - 1) != a[i])
+                    Union.add(a[i]);
                 i++;
-            }
-            else // case 3
+            } else // case 3
             {
-                if (Union.size() == 0 || Union.get(Union.size()-1) != b[j])
+                if (Union.size() == 0 || Union.get(Union.size() - 1) != b[j])
                     Union.add(b[j]);
                 j++;
             }
-        }while (i < n) // IF any element left in arr1
+        }
+        while (i < n) // IF any element left in arr1
         {
-            if (Union.get(Union.size()-1) != a[i])
+            if (Union.get(Union.size() - 1) != a[i])
                 Union.add(a[i]);
             i++;
         }
         while (j < m) // If any elements left in arr2
         {
-            if (Union.get(Union.size()-1) != b[j])
+            if (Union.get(Union.size() - 1) != b[j])
                 Union.add(b[j]);
             j++;
         }
@@ -78,11 +78,10 @@ int m = b.length;
 
     ///*TODO find second highest and second lowest*/
 
-    public static int[] getSecondOrderElements(int n, int []a) {
+    public static int[] getSecondOrderElements(int n, int[] a) {
         // Write your code here.
 
-        if (n == 0 || n==1)
-        {
+        if (n == 0 || n == 1) {
             System.out.print(-1);
             System.out.print(" ");
             System.out.print(-1);
@@ -91,34 +90,31 @@ int m = b.length;
         int small = Integer.MAX_VALUE;
         int second_small = Integer.MAX_VALUE;
         int large = Integer.MIN_VALUE;
-        int second_large = Integer.MIN_VALUE ;
+        int second_large = Integer.MIN_VALUE;
         int i;
-        for (i = 0;i < n;i++)
-        {
-            small = Math.min(small,a[i]);
-            large = Math.max(large,a[i]);
+        for (i = 0; i < n; i++) {
+            small = Math.min(small, a[i]);
+            large = Math.max(large, a[i]);
         }
-        for (i = 0;i < n;i++)
-        {
-            if (a[i] < second_small && a[i] != small)
-            {
+        for (i = 0; i < n; i++) {
+            if (a[i] < second_small && a[i] != small) {
                 second_small = a[i];
             }
-            if (a[i] > second_large && a[i] != large)
-            {
+            if (a[i] > second_large && a[i] != large) {
                 second_large = a[i];
             }
         }
 
 
-        return new int[] {second_large,second_small};
+        return new int[]{second_large, second_small};
 
     }
-// TODO : is Array Sorted?
-    public static int isSorted(int n, int []a) {
+
+    // TODO : is Array Sorted?
+    public static int isSorted(int n, int[] a) {
         // Write your code here.
-        for(int i =1 ;i<a.length;i++){
-            if(a[i]<a[i-1]){
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] < a[i - 1]) {
                 return 0;
             }
         }
@@ -126,15 +122,15 @@ int m = b.length;
     }
 
     /*TODO: remove duplicate */
-    public static int removeDuplicates(int[] arr,int n) {
+    public static int removeDuplicates(int[] arr, int n) {
         // Write your code here.
         int count = 0;
-        for(int i =0;i<n-1;i++){
-            if(arr[i] == arr[i+1]){
+        for (int i = 0; i < n - 1; i++) {
+            if (arr[i] == arr[i + 1]) {
                 count++;
             }
         }
-        return n-count;
+        return n - count;
     }
 
 
@@ -143,24 +139,24 @@ int m = b.length;
     static int[] rotateArray(int[] arr, int n) {
         // Write your code here.
         int temp = arr[0];
-        for(int i =1 ; i<n;i++){
-            arr[i-1] = arr[i];
+        for (int i = 1; i < n; i++) {
+            arr[i - 1] = arr[i];
         }
-        arr[n-1] = temp;
+        arr[n - 1] = temp;
         return arr;
     }
 
     /*TODO Left rotate by D place*/
 
-    static int[] rotateArrayByDPlace(int[] arr ,int d){
+    static int[] rotateArrayByDPlace(int[] arr, int d) {
 
         int[] temp = new int[arr.length];
-        int counter =0;
-        for(int i =d ;i<arr.length;i++){
+        int counter = 0;
+        for (int i = d; i < arr.length; i++) {
             temp[counter] = arr[i];
             counter++;
         }
-        for(int i=0;i<d;i++){
+        for (int i = 0; i < d; i++) {
             temp[counter] = arr[i];
             counter++;
         }
@@ -172,29 +168,29 @@ int m = b.length;
        of the array in their original order. Return the modified array.
 
      */
-        public static int[] moveZerosToEnd(int[] arr, int n) {
+    public static int[] moveZerosToEnd(int[] arr, int n) {
 
-            int count =0;
-            for(int i=0;i<n;i++){
-                if(arr[i] !=0){
-                    int temp = arr[i];
-                    arr[i] = arr[count];
-                    arr[count] = temp;
-                    count++;
-                }
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] != 0) {
+                int temp = arr[i];
+                arr[i] = arr[count];
+                arr[count] = temp;
+                count++;
             }
-return arr;
         }
+        return arr;
+    }
 
         /*TODO You are given an array ‘arr’ containing ‘n’ integers. You are also given an integer ‘num’,
            and your task is to find whether ‘num’ is present in the array or not.
                 If ‘num’ is present in the array, return the 0-based index of the first occurrence
                  of ‘num’. Else, return -1.*/
 
-    public static int linearSearch(int n, int num, int []arr){
+    public static int linearSearch(int n, int num, int[] arr) {
         // Write your code here.
-        for(int i =0;i<n;i++){
-            if(arr[i] == num){
+        for (int i = 0; i < n; i++) {
+            if (arr[i] == num) {
                 return i;
             }
         }
@@ -206,9 +202,9 @@ return arr;
 
     public int missingNumber(int[] nums) {
         Arrays.sort(nums);
-        int i =0;
-        for(i =0;i<nums.length;i++){
-            if(nums[i] != i){
+        int i = 0;
+        for (i = 0; i < nums.length; i++) {
+            if (nums[i] != i) {
                 return i;
             }
         }
@@ -217,15 +213,15 @@ return arr;
 
     /*TODO Given an array that contains only 1 and 0 return the count of maximum consecutive ones in the array.*/
 
-    public static int countConsecutiveOne(int[] a,int n ){
+    public static int countConsecutiveOne(int[] a, int n) {
         int count = 0;
         int maxCount = 0;
-        for(int i =0;i<n;i++){
-            if(a[i] ==1){
+        for (int i = 0; i < n; i++) {
+            if (a[i] == 1) {
                 count++;
-                maxCount = Math.max(maxCount,count);
-            }else{
-                count =0;
+                maxCount = Math.max(maxCount, count);
+            } else {
+                count = 0;
             }
         }
         return maxCount;
@@ -235,14 +231,14 @@ return arr;
         It contains each number exactly twice except for one number, which occurs exactly once.
         Find the number that occurs exactly once.*/
 
-    public static int getSingleElement(int []arr){
+    public static int getSingleElement(int[] arr) {
         // Write your code here.
-        for(int i =0;i<arr.length-1; i =i+2){
-            if(arr[i] !=arr[i+1]){
+        for (int i = 0; i < arr.length - 1; i = i + 2) {
+            if (arr[i] != arr[i + 1]) {
                 return arr[i];
             }
         }
-        return arr[arr.length-1];
+        return arr[arr.length - 1];
     }
 
 
@@ -255,12 +251,12 @@ return arr;
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
-            if(sum > k){
+            if (sum > k) {
                 sum -= arr[start];
                 start++;
             }
-            if(sum ==k){
-                maxLength = Math.max(maxLength, i - start+1);
+            if (sum == k) {
+                maxLength = Math.max(maxLength, i - start + 1);
             }
         }
         return maxLength;
@@ -268,23 +264,23 @@ return arr;
     /*TODO Using Hashing*/
 
     public static int longestSubArrayWithSumKUsingHashing(int[] arr, int k) {
-        int maxLen =0;
+        int maxLen = 0;
 
-        int currentSum= 0;
+        int currentSum = 0;
 
-        Map<Integer,Integer> map = new HashMap<>();
-        map.put(0,-1); //
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, -1); //
 
-        for(int i =0;i<arr.length;i++){
+        for (int i = 0; i < arr.length; i++) {
 
             currentSum += arr[i];
 
-            if(currentSum == k){
-                maxLen = i+1;
+            if (currentSum == k) {
+                maxLen = i + 1;
             }
 
-            if(map.containsKey(currentSum-k)){
-                maxLen = Math.max(maxLen, i-map.get(currentSum-k));
+            if (map.containsKey(currentSum - k)) {
+                maxLen = Math.max(maxLen, i - map.get(currentSum - k));
             }
 
             if (!map.containsKey(currentSum)) {
@@ -296,8 +292,6 @@ return arr;
         return maxLen;
 
     }
-
-
 
 
 }
