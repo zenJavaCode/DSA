@@ -1,15 +1,16 @@
 package string.easy;
 
 import java.math.BigInteger;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class StringEasy {
 
     public static void main(String[] args) {
         String s = "(()())(())";
         String s1 = "23953767242388496965";
+        String s2 = "00100101";
+
+        System.out.println(countSubString(s2));
         largestOddNumber(s1);
         removeOuterParentheses(s);
     }
@@ -246,5 +247,99 @@ Other examples include:
     }
 
 
+    /*TODO :  Given a binary string S. The task is to count the number of substrings that start and end with 1.
+       For example, if the input string is “00100101”, then there are three substrings “1001”, “100101” and “101”.
+          */
 
+
+    public static int countSubString( String s)
+    {
+        // Your code here
+        int count = 0; // Initialize the count of valid substrings to 0
+        int n = s.length(); // Get the length of the input string
+
+        for (int i = 0; i < n; i++) { // Iterate through the string
+            if (s.charAt(i) == '1') { // If the current character is '1'
+                int j = i + 1; // Initialize j to the next character's index
+                // Check for subsequent characters until the end or encountering a 0
+                while (j < n && s.charAt(j) == '1') {
+                    j++;
+                }
+                // If the loop ends without encountering a 0, it's a valid substring
+                if (j == n) {
+                    count++;
+                } else {
+                    // Otherwise, increment count and continue (multiple substrings possible starting from i)
+                    count++;
+                    i = j; // Move to the next character after the encountered 0
+                }
+            }
+        }
+
+        return count;
+    }
+
+    /*TODO Your task is to implement the function strstr. The function takes two strings as arguments (s,x) and
+        locates the occurrence of the string x in the string s.
+       The function returns an integer denoting the first occurrence of the string x in s (0 based indexing).*/
+
+    static Boolean isSubStringPresent(String s,String x){
+        int n = s.length();
+        int m = x.length();
+        for(int i =0;i<n-m;i++){
+            if(s.charAt(i) == x.charAt(0)){
+                int j = 1;
+                while(j<m && s.charAt(i+j) == x.charAt(j)){
+                    j++;
+                }
+                if(j==m){
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
+
+    /*TODO Given a string str of lowercase alphabets. The task is to find the maximum occurring character in the string str.
+       If more than one character occurs the maximum number of time then print the lexicographically smaller character.*/
+
+    public static boolean isIsogram(String S) {
+        // Create a set to store characters
+        Set<Character> seen = new HashSet<>();
+
+        // Iterate through the string
+        for (char c : S.toCharArray()) {
+            // Check if the character has been encountered before
+            if (seen.contains(c)) {
+                return false; // If yes, the string is not an isogram
+            }
+
+            // Add the character to the set
+            seen.add(c);
+        }
+        return true;
+    }
+
+    public static void findRepeatedCharIndex(String S) {
+        // Create a HashMap to store characters and their indices
+        Map<Character, Integer> charIndices = new HashMap<>();
+
+        // Iterate through the string
+        for (int i = 0; i < S.length(); i++) {
+            char c = S.charAt(i);
+            // If the character is already in the HashMap
+            if (charIndices.containsKey(c)) {
+                // Print the index and return
+                System.out.println(charIndices.get(c));
+                return;
+            } else {
+                // Store the index of the character in the HashMap
+                charIndices.put(c, i);
+            }
+        }
+
+        // If no repeated character is found, print -1
+        System.out.println(-1);
+    }
 }
