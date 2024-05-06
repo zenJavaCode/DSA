@@ -100,6 +100,10 @@ public class StreamsDriver {
 
         Student student = list.stream().sorted(Comparator.comparing(Student::getRank)).skip(1).findFirst().get();
 
+      Map<String,Long> map =  list.stream().collect(Collectors.groupingBy(Student ::getDepartmantName,Collectors.counting()));
+
+
+
         return groupByStudentDepartmentName;
     }
 
