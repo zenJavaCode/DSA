@@ -226,16 +226,17 @@ Other examples include:
 
 
     /*TODO Check if a string is subsquence of other
-    *       Ex:- s1 = "ABCD",s2 = "AD" return true;*/
+     *       Ex:- s1 = "ABCD",s2 = "AD" return true;*/
 
     public static boolean isSubSequence(String s, String t) {
         // naive solution
-        int i =0;
-        int j =0;
-        for (i = 0, j =0; i < s.length(); i++) {
-            if(s.charAt(i) == t.charAt(j)) {
-                i++;j++;
-            }else{
+        int i = 0;
+        int j = 0;
+        for (i = 0, j = 0; i < s.length(); i++) {
+            if (s.charAt(i) == t.charAt(j)) {
+                i++;
+                j++;
+            } else {
                 i++;
             }
         }

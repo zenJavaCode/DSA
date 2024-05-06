@@ -32,6 +32,38 @@ public class MediumArrayProblems {
         return maxSum;
     }
 
+/*TODO find minimum sub array sum*/
+    public static int minSumSubArray(int k, int[] nums) {
+
+        int minSum = Integer.MAX_VALUE;
+        int windowSum = 0;
+        for(int i =0;i<k;i++){
+            windowSum += nums[i];
+        }
+        minSum = windowSum;
+        for(int i =k;i<nums.length;i++){
+            windowSum += nums[i] - nums[i-k];
+            minSum = Math.min(minSum, windowSum);
+        }
+        return minSum;
+
+    }
+
+    /*  TODO Find the longest substring with k distinct characters.*/
+
+    static Integer longestSubstringWithoutRepeatingCharacters(String str,int k) {
+    return null;
+
+    }
+
+
+
+
+
+
+
+
+
     /*TODO You are given an array 'arr' of length 'n', consisting of integers.
         A subarray is a contiguous segment of an array. In other words, a subarray can be formed by removing 0 or
         more integers from the beginning and 0 or more integers from the end of an array.

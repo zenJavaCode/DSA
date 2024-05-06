@@ -6,17 +6,15 @@ public class StringMedium {
 
     public static void main(String[] args) {
         String s = "aacfssa";
-        System.out.println(  countSubStrings(s,3));
+        System.out.println(countSubStrings(s, 3));
     }
 
 
     public String frequencySort(String s) {
-
-        Map<Character,Integer> map = new HashMap<>();
-        for(char c : s.toCharArray()) {
+        Map<Character, Integer> map = new HashMap<>();
+        for (char c : s.toCharArray()) {
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
-
         List<Map.Entry<Character, Integer>> entryList = new ArrayList<>(map.entrySet());
         entryList.sort((entry1, entry2) -> entry2.getValue().compareTo(entry1.getValue()));
 
@@ -29,7 +27,6 @@ public class StringMedium {
             }
         }
         return ans.toString();
-
     }
 
     /*TODO FIND ATOI
@@ -44,33 +41,33 @@ Edge case: If the integer is out of the 32-bit signed integer range [-231, 231 -
 Return the integer as the final result.*/
 
     public int myAtoi(String s) {
-        int ans=0;
-        int i=0;
-        int sign=1;
-        int max=Integer.MAX_VALUE;
-        int min=Integer.MIN_VALUE;
-        if(s.length()==0){
+        int ans = 0;
+        int i = 0;
+        int sign = 1;
+        int max = Integer.MAX_VALUE;
+        int min = Integer.MIN_VALUE;
+        if (s.length() == 0) {
             return 0;
         }
-        while(i<s.length() && s.charAt(i)==' '){
+        while (i < s.length() && s.charAt(i) == ' ') {
             i++;
         }
 
-        if(i<s.length() && (s.charAt(i)=='-'|| s.charAt(i)=='+')){
-            if(s.charAt(i)=='-'){
-                sign=-1;
+        if (i < s.length() && (s.charAt(i) == '-' || s.charAt(i) == '+')) {
+            if (s.charAt(i) == '-') {
+                sign = -1;
             }
             i++;
         }
-        while(i<s.length() && s.charAt(i)-'0'<=9 && s.charAt(i)-'0'>=0){
-            int digit = s.charAt(i)-'0';
-            if(ans>max/10 || (ans==max/10 && digit>max%10)){
+        while (i < s.length() && s.charAt(i) - '0' <= 9 && s.charAt(i) - '0' >= 0) {
+            int digit = s.charAt(i) - '0';
+            if (ans > max / 10 || (ans == max / 10 && digit > max % 10)) {
                 return (sign == 1) ? max : min;
             }
-            ans=ans*10+digit;
+            ans = ans * 10 + digit;
             i++;
         }
-        return ans*sign;
+        return ans * sign;
     }
 
 /*TODO You are given a string 'str' of lowercase alphabets and an integer 'k' .
@@ -114,15 +111,15 @@ Time Limit: 1 second
         // Write your code here.
         StringBuilder sb = new StringBuilder();
         int count = 0;
-        for(int i =0;i<k;i++){
+        for (int i = 0; i < k; i++) {
             sb.append(str.charAt(i));
         }
-        for(int i =k;i<str.length();i++){
-            String temp=sb.toString();
+        for (int i = k; i < str.length(); i++) {
+            String temp = sb.toString();
             sb.deleteCharAt(0);
             sb.append(str.charAt(i));
 
-            if(!sb.toString().equals(temp)){
+            if (!sb.toString().equals(temp)) {
                 count++;
             }
         }
@@ -130,35 +127,29 @@ Time Limit: 1 second
     }
 
 
-/*TODO Anagram is basically the permutation*/
+    /*TODO Anagram is basically the permutation*/
 
-    public static boolean isAnagram(String s1, String s2){
+    public static boolean isAnagram(String s1, String s2) {
         if (s1.length() != s2.length()) {
             return false;
         }
-        Map<Character,Integer> map = new HashMap<>();
-        for(int i =0;i<s1.length();i++){
-            map.put(s1.charAt(i),map.getOrDefault(s1.charAt(i),0)+1);
+        Map<Character, Integer> map = new HashMap<>();
+        for (int i = 0; i < s1.length(); i++) {
+            map.put(s1.charAt(i), map.getOrDefault(s1.charAt(i), 0) + 1);
         }
 
-        for(int i =0;i<s2.length();i++){
-           if(!map.containsKey(s2.charAt(i))){
-               return false;
-           }else{
-               int count = map.get(s2.charAt(i));
-               if(count>=1){
-                   map.put(s2.charAt(i),count-1);
-               }
-           }
+        for (int i = 0; i < s2.length(); i++) {
+            if (!map.containsKey(s2.charAt(i))) {
+                return false;
+            } else {
+                int count = map.get(s2.charAt(i));
+                if (count >= 1) {
+                    map.put(s2.charAt(i), count - 1);
+                }
+            }
         }
         return true;
     }
-
-
-
-
-
-
 
 
 }
