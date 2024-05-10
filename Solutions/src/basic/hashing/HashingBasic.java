@@ -34,19 +34,17 @@ Now, if the length of the query becomes large like 105 and the array size also b
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         int n;
         n = sc.nextInt();
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-
         //precompute:
         HashMap<Integer, Integer> mp = new HashMap<>();
         for (int i = 0; i < n; i++) {
-            Integer key =  (Integer)arr[i];
-            Integer freq = new Integer(0);
+            Integer key = (Integer) arr[i];
+            Integer freq = 0;
             if (mp.containsKey(key)) freq = mp.get(key); // fetching from the map
             freq++;
             mp.put(key, freq); // inserting into the map
@@ -58,12 +56,11 @@ Now, if the length of the query becomes large like 105 and the array size also b
             System.out.println(it.getKey() + "->" + it.getValue());
         }
         */
-
         int q;
         q = sc.nextInt();
         while (q-- > 0) {
             Integer number;
-            number = (Integer)sc.nextInt();
+            number = (Integer) sc.nextInt();
             // fetch:
             if (mp.containsKey(number)) System.out.println(mp.get(number));
             else System.out.println(0);
@@ -83,77 +80,45 @@ Input: ‘n’ = 6 ‘x’ = 9 ‘arr’ = [1, 3, 1, 9, 2, 7]
 Output: [2, 1, 1, 0, 0, 0]*/
 
 
-    public static int[]  countFrequency(int n, int x, int []nums){
+    public static int[] countFrequency(int n, int x, int[] nums) {
         // Write your code here.
-        Map<Integer,Integer> map = new HashMap<>();
-        int count =0;
-        for(int i =0;i<n;i++){
-            Integer numI = new Integer(nums[i]);
-            if(map.containsKey(Optional.of(nums[i]))){
+        Map<Integer, Integer> map = new HashMap<>();
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            Integer numI =nums[i];
+            if (map.containsKey(Optional.of(nums[i]))) {
                 map.put(Optional.of(nums[i]).get(), map.get(Optional.of(numI + 1)));
-            }
-            else
-            {
-                map.put(Optional.of(nums[i]).get(), new Integer(1));
+            } else {
+                map.put(Optional.of(nums[i]).get(), 1);
             }
 
         }
         int maxKey = Integer.MIN_VALUE;
-
         int minKey = Integer.MAX_VALUE;
-
         int maxCount = Integer.MIN_VALUE;
-
         int minCount = Integer.MAX_VALUE;
-
-
-
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()){
-
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
             int freq = entry.getValue();
-
             int key = entry.getKey();
-
-            if(freq > maxCount){
-
+            if (freq > maxCount) {
                 maxCount = freq;
-
                 maxKey = entry.getKey();
-
             }
-
-            if(freq < minCount){
-
+            if (freq < minCount) {
                 minCount = freq;
-
                 minKey = entry.getKey();
-
             }
-
-            if(freq == minCount){
-
+            if (freq == minCount) {
                 minKey = Math.min(key, minKey);
-
             }
-
-            if(freq == maxCount){
-
+            if (freq == maxCount) {
                 maxKey = Math.min(key, maxKey);
-
             }
-
         }
-
-        int arr [] = new int[2];
-
+        int arr[] = new int[2];
         arr[0] = maxKey;
-
         arr[1] = minKey;
-
         return arr;
-
-
-
     }
 
 
