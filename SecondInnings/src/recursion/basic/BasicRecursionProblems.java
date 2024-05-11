@@ -50,12 +50,19 @@ bs.printNosReverse(6);
             smaller than or equal to N.*/
 
     static ArrayList<Long> factorialNumbers(long N){
-        List<Long> list = new ArrayList<>();
-        if(N>0){
-            factorialNumbers(N-1);
-
+        ArrayList<Long> list = new ArrayList<>();
+        for (long i = 1; i <= N; i++) {
+            list.add(factorialNumber(i));
         }
+        return list;
+    }
 
+    private static long factorialNumber(long n) {
+        if (n == 0 || n == 1) {
+            return 1;
+        } else {
+            return n * factorialNumber(n - 1);
+        }
     }
 }
 
