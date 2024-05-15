@@ -21,4 +21,7 @@ public class FunctionalInterfaceExample {
         half = half.andThen(a -> 3 * a );
         System.out.println(half.apply(24));
     }
+
+
+
 }
