@@ -312,7 +312,6 @@ public class MediumArrayProblems {
     /*TODO Find Longest Consecutive sequence*/
     public static int longestConsecutiveSequenceBF(int[] arr) {
         int maxLength = 1;
-
         for (int i = 0; i < arr.length; i++) {
             int x = arr[i];
             int cnt = 1;
