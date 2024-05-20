@@ -223,7 +223,7 @@ public class  BasicArrayProblems {
         return maxCount;
     }
 
-    /*TODO You are given a sorted array 'arr' of positive integers of size 'n'.
+    /*TODO You are given a sortireed array 'arr' of positive integers of size 'n'.
         It contains each number exactly twice except for one number, which occurs exactly once.
         Find the number that occurs exactly once.*/
 
