@@ -3,7 +3,7 @@ package arrays;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class BasicArrayProblems {
+public class  BasicArrayProblems {
 
     public static int[] mergeTwoArrayUsingHashSet(int[] a, int[] b) {
         Set<Integer> set = new HashSet<Integer>();
@@ -203,7 +203,7 @@ public class BasicArrayProblems {
             if (nums[i] != i) {
                 return i;
             }
-        }
+         }
         return i;
     }
 
