@@ -335,6 +335,40 @@ public class MediumArrayProblems {
         return false;
     }
 
+    /*TODO Longest Consecutive Sequence in an Array*/
+
+
+
+    public  static int longestConsecutiveSequence(int[] arr){
+        int n = arr.length;
+        if (n == 0) {
+            return 0;
+        }
+        Set<Integer> set = new HashSet<>();
+
+        for(int i :arr){
+            set.add(i);
+        }
+
+        int longest =1;
+        for(int num :set){
+            if(set.contains(num-1)){
+                int cnt = 1;
+                int x = num;
+                while(set.contains(x+1)){
+                    x++;
+                    cnt++;
+                }
+                longest = Math.max(cnt,longest);
+            }
+        }
+        return longest;
+    }
+
+
+
+
+
     /*TODO now using hashing :-*/
 
     public static int longestConsecutive(int[] a) {

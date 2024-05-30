@@ -18,7 +18,35 @@ public class StreamsDriver {
                 new Student(9, "Sonu", "Shankar", 27, "Female", "Computer Engineering", 2018, "Karnataka", 7),
                 new Student(10, "Shubham", "Pandey", 26, "Male", "Instrumentation Engineering", 2017, "Mumbai", 98));
         System.out.println(studentsWhoseFirstNameStartsWithAlphabetA(list));
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /*TODO: 1- Find list of students whose first name starts with alphabet A*/
 
@@ -79,8 +107,7 @@ public class StreamsDriver {
         List<Student> delhiStudents = list.stream().filter(student -> student.getCity().equalsIgnoreCase("Delhi")).sorted( Comparator.comparing(Student ::getFirstName)).collect(Collectors.toList());
         System.out.println("List of students who stays in Delhi and sort them by their names : "+delhiStudents);
 
-        /*TODO Find the average rank in all departments
-         */
+        /*TODO Find the average rank in all departments.*/
 
         Map<String,Double> mapAvgRankInALLDepartment = list.stream().collect(Collectors.groupingBy(Student::getDepartmantName,Collectors.averagingInt(Student::getRank)));
 
