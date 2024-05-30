@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c774faf7-a11f-4a0c-9a74-2cf23e1717d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SecondInnings/src/arrays/ArrayRevisionTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/streams/StudentDriverTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solutions/src/arrays/BasicArrayProblems.java" beforeDir="false" afterPath="$PROJECT_DIR$/Solutions/src/arrays/BasicArrayProblems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondInnings/src/arrays/ArrayRevisionTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondInnings/src/arrays/ArrayRevisionTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solutions/src/arrays/MediumArrayProblems.java" beforeDir="false" afterPath="$PROJECT_DIR$/Solutions/src/arrays/MediumArrayProblems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solutions/src/multithreading/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Solutions/src/multithreading/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SecondInnings/arrays/ArrayRevision.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondInnings/arrays/ArrayRevision.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Solutions/arrays/MediumArrayProblems.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Solutions/arrays/MediumArrayProblems.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +44,16 @@
     "Application.ArraysBasic.executor": "Debug",
     "Application.BasicRecursionProblems.executor": "Run",
     "Application.FunctionalInterfaceExample.executor": "Run",
+    "Application.MediumArrayProblems.executor": "Debug",
+    "Application.NodeDriver.executor": "Run",
     "Application.Sample.executor": "Run",
+    "Application.StudentDriverTwo.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Piyush j/DSA",
+    "last_opened_file_path": "C:/Users/Piyush j/work/moxey-wallet-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,20 +62,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Sample">
-    <configuration name="BasicRecursionProblems" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="recursion.basic.BasicRecursionProblems" />
-      <module name="SecondInnings" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="recursion.basic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.MediumArrayProblems">
     <configuration name="FunctionalInterfaceExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="functional.FunctionalInterfaceExample" />
       <module name="Solutions" />
@@ -82,12 +76,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MathsBasic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="arrays.MathsBasic" />
-      <module name="SecondInnings" />
+    <configuration name="MediumArrayProblems" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="arrays.MediumArrayProblems" />
+      <module name="Solutions" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="arrays.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NodeDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="linkedList.NodeDriver" />
+      <module name="SecondInnings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,22 +115,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StudentDriverTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="streams.StudentDriverTwo" />
+      <module name="Solutions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MediumArrayProblems" />
+        <item itemvalue="Application.StudentDriverTwo" />
+        <item itemvalue="Application.NodeDriver" />
         <item itemvalue="Application.Sample" />
         <item itemvalue="Application.FunctionalInterfaceExample" />
-        <item itemvalue="Application.BasicRecursionProblems" />
-        <item itemvalue="Application.MathsBasic" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -158,6 +171,16 @@
           <line>41</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/SecondInnings/src/linkedList/NodeDriver.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Solutions/src/arrays/MediumArrayProblems.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/SecondInnings/src/arrays/MathsBasic.java</url>
           <line>5</line>
@@ -169,5 +192,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="linkedList.Node" memberName="data" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

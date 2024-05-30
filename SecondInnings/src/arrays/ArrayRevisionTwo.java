@@ -70,6 +70,29 @@ public class ArrayRevisionTwo {
 
     }
 
+    public int[] sortedSquares(int[] nums) {
+
+        int leftPointer = 0;
+        int rightPointer = nums.length-1;
+        int[] result = new int[nums.length];
+        int idx = nums.length-1;
+        while(leftPointer<=rightPointer){
+
+            int leftSquare = nums[leftPointer] * nums[leftPointer];
+            int rightSquare = nums[rightPointer] * nums[rightPointer];
+
+            if(leftSquare>rightSquare){
+                result[idx--] = leftSquare;
+                leftPointer++;
+            } else  {
+                result[idx--] = rightSquare;
+                rightPointer--;
+            }
+
+        }
+        return result;
+    }
+
 
 
 

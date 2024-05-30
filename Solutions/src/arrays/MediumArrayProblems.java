@@ -13,6 +13,11 @@ public class MediumArrayProblems {
         int n = majorityElement(v);
         System.out.println(n);
 
+        int[] nums = {2,7,11,15};
+        int target = 9;
+       int[] res =  twoSum(nums,target);
+
+
     }
 
 
@@ -359,6 +364,22 @@ public class MediumArrayProblems {
             }
         }
         return longest;
+    }
+
+
+    public static int[] twoSum(int[] nums, int target) {
+
+        HashMap<Integer, Integer> hashSearched = new HashMap<>();
+        int[] nums2 = new int[2];
+        for (int i = 0; i < nums.length; i++) {
+            if (hashSearched.containsKey(nums[i])) {
+                nums2[0] = i;
+                nums2[1] = (int) hashSearched.get(nums[i]);
+            } else {
+                hashSearched.put(target - nums[i], i);
+            }
+        }
+        return nums2;
     }
 
 
