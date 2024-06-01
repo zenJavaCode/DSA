@@ -3,7 +3,7 @@ package arrays;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class BasicArrayProblems {
+public class  BasicArrayProblems {
 
     public static int[] mergeTwoArrayUsingHashSet(int[] a, int[] b) {
         Set<Integer> set = new HashSet<Integer>();
@@ -203,7 +203,7 @@ public class BasicArrayProblems {
             if (nums[i] != i) {
                 return i;
             }
-        }
+         }
         return i;
     }
 
@@ -223,7 +223,7 @@ public class BasicArrayProblems {
         return maxCount;
     }
 
-    /*TODO You are given a sorted array 'arr' of positive integers of size 'n'.
+    /*TODO You are given a sortireed array 'arr' of positive integers of size 'n'.
         It contains each number exactly twice except for one number, which occurs exactly once.
         Find the number that occurs exactly once.*/
 
