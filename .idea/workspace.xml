@@ -5,41 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c774faf7-a11f-4a0c-9a74-2cf23e1717d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SecondInnings/src/arrays/Interview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SecondInnings/src/comparator/SuperHeroComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/arrays/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/arrays/InterviewPwc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/Animal/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/Animal/AnimalFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/Animal/AnimalType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/Animal/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/Animal/Lion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/Animal/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/TaxCalculation/LntInterview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/TaxCalculation/NewRegimeTaxCalculationAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/TaxCalculation/OldRegimeTaxCalculationAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/TaxCalculation/SalaryDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/TaxCalculation/TaxCalculationAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/TaxCalculation/TaxCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/TaxCalculation/TaxRegime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/TaxCalculation/TaxRegimeAlgorithemFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/factoryDesignPatternExample/SalaryDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/factoryDesignPatternExample/TaxCalculationAlgorithem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/factoryDesignPatternExample/TaxCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/LiveLocks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/streams/Interview2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/streams/StreamsR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondInnings/src/arrays/ArrayRevision.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondInnings/src/arrays/ArrayRevision.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondInnings/src/comparable/SuperHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondInnings/src/comparable/SuperHero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondInnings/src/streams/Streams.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondInnings/src/streams/Streams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solutions/src/arrays/MediumArrayProblems.java" beforeDir="false" afterPath="$PROJECT_DIR$/Solutions/src/arrays/MediumArrayProblems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/ShapeCalculater.java" beforeDir="false" afterPath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/ShapeCalculater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solutions/src/streams/StreamsDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Solutions/src/streams/StreamsDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondInnings/arrays/ArrayRevision.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondInnings/arrays/ArrayRevision.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondInnings/streams/Streams.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondInnings/streams/Streams.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Solutions/arrays/MediumArrayProblems.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Solutions/arrays/MediumArrayProblems.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Solutions/streams/StreamsDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Solutions/streams/StreamsDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/TaxCalculation/TaxCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/TaxCalculation/TaxCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/TaxCalculation/TaxRegimeAlgorithemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Solutions/src/designPatterns/factory/TaxCalculation/TaxRegimeAlgorithemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solutions/src/streams/StreamRevision.java" beforeDir="false" afterPath="$PROJECT_DIR$/Solutions/src/streams/StreamRevision.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Solutions/designPatterns/factory/TaxCalculation/LntInterview.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Solutions/designPatterns/factory/TaxCalculation/LntInterview.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Solutions/designPatterns/factory/TaxCalculation/TaxCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Solutions/designPatterns/factory/TaxCalculation/TaxCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Solutions/designPatterns/factory/TaxCalculation/TaxRegimeAlgorithemFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Solutions/designPatterns/factory/TaxCalculation/TaxRegimeAlgorithemFactory.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +56,7 @@
     "Application.Streams.executor": "Run",
     "Application.StreamsR.executor": "Run",
     "Application.StreamsTwo.executor": "Run",
+    "Application.TaxRegimeAlgorithemFactory.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -98,7 +71,7 @@
       <recent name="designPatterns.factory.TaxCalculation" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LntInterview">
+  <component name="RunManager" selected="Application.TaxRegimeAlgorithemFactory">
     <configuration name="Interview2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="streams.Interview2" />
       <module name="Solutions" />
@@ -118,19 +91,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="arrays.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LiveLocks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="multithreading.LiveLocks" />
-      <module name="Solutions" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="multithreading.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,13 +124,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TaxRegimeAlgorithemFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="designPatterns.factory.TaxCalculation.TaxRegimeAlgorithemFactory" />
+      <module name="Solutions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="designPatterns.factory.TaxCalculation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TaxRegimeAlgorithemFactory" />
         <item itemvalue="Application.LntInterview" />
         <item itemvalue="Application.InterviewPwc" />
         <item itemvalue="Application.Interview2" />
         <item itemvalue="Application.StreamsR" />
-        <item itemvalue="Application.LiveLocks" />
       </list>
     </recent_temporary>
   </component>

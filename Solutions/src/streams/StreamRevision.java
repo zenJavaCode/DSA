@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class StreamRevision {
@@ -77,10 +78,13 @@ public class StreamRevision {
 
      //   Here's a Java 8 program that finds duplicate elements and their count from a given ArrayList of Strings:
 
-        Map<String,Long> map = inputArr.stream().collect(Collectors.groupingBy(str -> str,Collectors.counting())).entrySet().stream()
+        Map<String,Long> map = inputArr.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting())).entrySet().stream()
                                   .filter(entry ->entry.getValue()>1).collect(Collectors.toMap(Map.Entry::getKey,Map.Entry::getValue));
 
         map.forEach((key, value) -> System.out.println(key + ": " + value));
+
+        map.entrySet().stream().filter(entry -> entry.getValue()>1).collect(Collectors.toMap(Map.Entry::getKey,Map.Entry::getValue));
+        map.forEach((key,valye) -> System.out.println(key+" : "+valye));
     }
 
 

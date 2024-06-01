@@ -2,8 +2,12 @@ package designPatterns.factory.TaxCalculation;
 
 public class TaxCalculator {
 
+    public static void main(String[] args) {
 
-    int calculateTax(SalaryDetails salaryDetails,TaxRegime regime){
+
+
+    }
+   public static  int calculateTax(SalaryDetails salaryDetails,TaxRegime regime){
 
     TaxCalculationAlgorithm taxCalculationAlgorithm  = TaxRegimeAlgorithemFactory.getTaxCalculationAlgorithmForRegime(regime) ;
 
