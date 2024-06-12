@@ -29,6 +29,7 @@ public class StreamsR {
         Map<Character,Long> map = in.codePoints().mapToObj(c -> (char) c).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
         Character c =  map.entrySet().stream().filter(entry -> entry.getValue() ==1L).map(Map.Entry::getKey).findFirst().orElse(null);
 
+        Character p = map.entrySet().stream().filter(entry -> entry.getValue() == 1L).map(Map.Entry::getKey).skip(1).findFirst().orElse(null);
 
     }
 }
