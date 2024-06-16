@@ -35,6 +35,8 @@ public class SuperHero implements Comparable<SuperHero> {
     }
 
     public static void main(String[] args) {
+        ArrayList<Integer> result = new ArrayList<>();
+
         SuperHero hero1 = new SuperHero("hero1", "Hanuman", 23);
         SuperHero hero2 = new SuperHero("hero2", "Superman", 30);
         SuperHero hero3 = new SuperHero("hero3", "Batman", 35);

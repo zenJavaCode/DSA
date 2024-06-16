@@ -9,15 +9,16 @@ public class StreamsDriver {
         List<Student> list = Arrays.asList(
                 new Student(1, "Rohit", "Mall", 30, "Male", "Mechanical Engineering", 2015, "Mumbai", 122),
                 new Student(2, "Pulkit", "Singh", 56, "Male", "Computer Engineering", 2018, "Delhi", 67),
-                new Student(3, "Ankit", "Patil", 25, "Female", "Mechanical Engineering", 2019, "Kerala", 164),
+                new Student(3, "Ankita", "Patil", 25, "Female", "Mechanical Engineering", 2019, "Kerala", 164),
                 new Student(4, "Satish Ray", "Malaghan", 30, "Male", "Mechanical Engineering", 2014, "Kerala", 26),
-                new Student(5, "Roshan", "Mukd", 23, "Male", "Biotech Engineering", 2022, "Mumbai", 12),
+                new Student(5, "Roshani", "Mukd", 23, "Female", "Biotech Engineering", 2022, "Mumbai", 12),
                 new Student(6, "Chetan", "Star", 24, "Male", "Mechanical Engineering", 2023, "Karnataka", 90),
-                new Student(7, "Arun", "Vittal", 26, "Male", "Electronics Engineering", 2014, "Karnataka", 324),
+                new Student(7, "Arun", "Mittal", 26, "Male", "Electronics Engineering", 2014, "Karnataka", 324),
                 new Student(8, "Nam", "Dev", 31, "Male", "Computer Engineering", 2014, "Karnataka", 433),
-                new Student(9, "Sonu", "Shankar", 27, "Female", "Computer Engineering", 2018, "Karnataka", 7),
+                new Student(9, "Sonu", "Shankar", 27, "Male", "Computer Engineering", 2018, "Karnataka", 7),
                 new Student(10, "Shubham", "Pandey", 26, "Male", "Instrumentation Engineering", 2017, "Mumbai", 98));
         System.out.println(studentsWhoseFirstNameStartsWithAlphabetA(list));
+
     }
 
     /*TODO: 1- Find list of students whose first name starts with alphabet A*/
@@ -79,8 +80,7 @@ public class StreamsDriver {
         List<Student> delhiStudents = list.stream().filter(student -> student.getCity().equalsIgnoreCase("Delhi")).sorted( Comparator.comparing(Student ::getFirstName)).collect(Collectors.toList());
         System.out.println("List of students who stays in Delhi and sort them by their names : "+delhiStudents);
 
-        /*TODO Find the average rank in all departments
-         */
+        /*TODO Find the average rank in all departments.*/
 
         Map<String,Double> mapAvgRankInALLDepartment = list.stream().collect(Collectors.groupingBy(Student::getDepartmantName,Collectors.averagingInt(Student::getRank)));
 
