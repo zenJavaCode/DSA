@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c774faf7-a11f-4a0c-9a74-2cf23e1717d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Solutions/src/streams/StudentDriverTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/arrays/Top150.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/DeadlockExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/JavaMultithreading.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/SynchronizedExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/Thread1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/Thread2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/practical/EvenOddPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/practical/EvenPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/practical/Odd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/practical/PracticalQuestionsMultithreading.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/practical/Thread2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/practical/string/HelloPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/practical/string/HelloWorldPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/practical/string/WorldPrinter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondInnings/src/arrays/ArrayRevisionTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondInnings/src/arrays/ArrayRevisionTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solutions/src/arrays/MediumArrayProblems.java" beforeDir="false" afterPath="$PROJECT_DIR$/Solutions/src/arrays/MediumArrayProblems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Solutions/src/multithreading/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Solutions/src/multithreading/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondInnings/arrays/ArrayRevision.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondInnings/arrays/ArrayRevision.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Solutions/arrays/MediumArrayProblems.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Solutions/arrays/MediumArrayProblems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solutions/src/string/easy/StringEasy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Solutions/src/string/easy/StringEasy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +52,17 @@
   "keyToString": {
     "Application.ArraysBasic.executor": "Debug",
     "Application.BasicRecursionProblems.executor": "Run",
+    "Application.DeadlockExample.executor": "Run",
+    "Application.EvenOddPrinter.executor": "Run",
     "Application.FunctionalInterfaceExample.executor": "Run",
+    "Application.JavaMultithreading.executor": "Run",
     "Application.MediumArrayProblems.executor": "Debug",
     "Application.NodeDriver.executor": "Run",
+    "Application.PracticalQuestionsMultithreading.executor": "Run",
     "Application.Sample.executor": "Run",
     "Application.StudentDriverTwo.executor": "Run",
+    "Application.SynchronizedExample.executor": "Run",
+    "Application.Top150.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -62,13 +77,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MediumArrayProblems">
-    <configuration name="FunctionalInterfaceExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="functional.FunctionalInterfaceExample" />
+  <component name="RunManager" selected="Application.Top150">
+    <configuration name="DeadlockExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="multithreading.DeadlockExample" />
       <module name="Solutions" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="functional.*" />
+          <option name="PATTERN" value="multithreading.practical.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,51 +91,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MediumArrayProblems" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="arrays.MediumArrayProblems" />
+    <configuration name="EvenOddPrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="multithreading.practical.EvenOddPrinter" />
+      <module name="Solutions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="multithreading.practical.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PracticalQuestionsMultithreading" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="multithreading.practical.PracticalQuestionsMultithreading" />
+      <module name="Solutions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="multithreading.practical.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SynchronizedExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="multithreading.SynchronizedExample" />
+      <module name="Solutions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="multithreading.practical.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Top150" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="arrays.Top150" />
       <module name="Solutions" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="arrays.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NodeDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="linkedList.NodeDriver" />
-      <module name="SecondInnings" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="linkedList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Sample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="arrays.Sample" />
-      <module name="SecondInnings" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="arrays.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentDriverTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="streams.StudentDriverTwo" />
-      <module name="Solutions" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="streams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MediumArrayProblems" />
-        <item itemvalue="Application.StudentDriverTwo" />
-        <item itemvalue="Application.NodeDriver" />
-        <item itemvalue="Application.Sample" />
-        <item itemvalue="Application.FunctionalInterfaceExample" />
+        <item itemvalue="Application.Top150" />
+        <item itemvalue="Application.PracticalQuestionsMultithreading" />
+        <item itemvalue="Application.EvenOddPrinter" />
+        <item itemvalue="Application.DeadlockExample" />
+        <item itemvalue="Application.SynchronizedExample" />
       </list>
     </recent_temporary>
   </component>
@@ -180,6 +195,11 @@
           <url>file://$PROJECT_DIR$/Solutions/src/arrays/MediumArrayProblems.java</url>
           <line>17</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Solutions/src/arrays/Top150.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/SecondInnings/src/arrays/MathsBasic.java</url>
