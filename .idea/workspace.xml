@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c774faf7-a11f-4a0c-9a74-2cf23e1717d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Solutions/src/functional/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/functional/MathOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/functional/StringChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/functional/StringCheckerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/functional/StringTransformer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/functional/StringUpperCaseTransformer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/functional/ValueSupplier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/streams/EYInterview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9ae470aa2b60e346b499267049b3b022fcfabe9d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a6d4811df3f0a4293cb2ebf44c03124702e06d4b" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/a/9ae470aa2b60e346b499267049b3b022fcfabe9d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/6/a6d4811df3f0a4293cb2ebf44c03124702e06d4b" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -43,32 +41,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ArraysBasic.executor": "Debug",
-    "Application.BasicRecursionProblems.executor": "Run",
-    "Application.CGIInterview.executor": "Run",
-    "Application.FunctionalInterfaceExample.executor": "Run",
-    "Application.MediumArrayProblems.executor": "Debug",
-    "Application.NodeDriver.executor": "Run",
-    "Application.Sample.executor": "Run",
-    "Application.StringUpperCaseTransformer.executor": "Run",
-    "Application.StudentDriverTwo.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Piyush j/work/moxey-wallet-service",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ArraysBasic.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.BasicRecursionProblems.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CGIInterview.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EYInterview.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FunctionalInterfaceExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MediumArrayProblems.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.NodeDriver.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Sample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StringUpperCaseTransformer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StudentDriverTwo.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Piyush j/work/moxey-wallet-service&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.StringUpperCaseTransformer">
+}</component>
+  <component name="RunManager" selected="Application.EYInterview">
     <configuration name="CGIInterview" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="basic.CGIInterview" />
       <module name="Solutions" />
@@ -82,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MediumArrayProblems" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="arrays.MediumArrayProblems" />
+    <configuration name="EYInterview" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="streams.EYInterview" />
       <module name="Solutions" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="arrays.*" />
+          <option name="PATTERN" value="streams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +94,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NodeDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="linkedList.NodeDriver" />
-      <module name="SecondInnings" />
+    <configuration name="MediumArrayProblems" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="arrays.MediumArrayProblems" />
+      <module name="Solutions" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="linkedList.*" />
+          <option name="PATTERN" value="arrays.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EYInterview" />
         <item itemvalue="Application.StringUpperCaseTransformer" />
         <item itemvalue="Application.CGIInterview" />
         <item itemvalue="Application.MediumArrayProblems" />
         <item itemvalue="Application.StudentDriverTwo" />
-        <item itemvalue="Application.NodeDriver" />
       </list>
     </recent_temporary>
   </component>
@@ -189,6 +188,11 @@
           <url>file://$PROJECT_DIR$/Solutions/src/arrays/MediumArrayProblems.java</url>
           <line>17</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Solutions/src/streams/EYInterview.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/SecondInnings/src/arrays/MathsBasic.java</url>
