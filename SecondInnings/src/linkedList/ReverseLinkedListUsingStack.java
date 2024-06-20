@@ -25,6 +25,10 @@ class Node {
         this.data = data;
         this.next = null;
     }
+
+    Node(){
+
+    }
 }
 
 public class ReverseLinkedListUsingStack {
