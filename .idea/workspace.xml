@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c774faf7-a11f-4a0c-9a74-2cf23e1717d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Solutions/src/exceptions/InterviewOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/streams/revision/DayOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondInnings/src/linkedList/NodeDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondInnings/src/linkedList/NodeDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondInnings/src/linkedList/ReverseLinkedListUsingStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondInnings/src/linkedList/ReverseLinkedListUsingStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,12 +19,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../.jdks/corretto-17.0.10/lib/src.zip!/java.base/java/util/LinkedList.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../.jdks/corretto-17.0.10/lib/src.zip!/java.base/java/util/Stack.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -40,11 +47,12 @@
     "Application.ArraysBasic.executor": "Debug",
     "Application.BasicRecursionProblems.executor": "Run",
     "Application.CGIInterview.executor": "Run",
+    "Application.EYInterview.executor": "Run",
     "Application.FunctionalInterfaceExample.executor": "Run",
-    "Application.InterviewOne.executor": "Debug",
     "Application.MediumArrayProblems.executor": "Debug",
     "Application.NodeDriver.executor": "Run",
     "Application.Sample.executor": "Run",
+    "Application.StringUpperCaseTransformer.executor": "Run",
     "Application.StudentDriverTwo.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -57,10 +65,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.InterviewOne">
+  <component name="RunManager" selected="Application.EYInterview">
     <configuration name="CGIInterview" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="basic.CGIInterview" />
       <module name="Solutions" />
@@ -74,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InterviewOne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exceptions.InterviewOne" />
+    <configuration name="EYInterview" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="streams.EYInterview" />
       <module name="Solutions" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exceptions.*" />
+          <option name="PATTERN" value="streams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NodeDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="linkedList.NodeDriver" />
-      <module name="SecondInnings" />
+    <configuration name="StringUpperCaseTransformer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="functional.StringUpperCaseTransformer" />
+      <module name="Solutions" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="linkedList.*" />
+          <option name="PATTERN" value="functional.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.InterviewOne" />
+        <item itemvalue="Application.EYInterview" />
+        <item itemvalue="Application.StringUpperCaseTransformer" />
         <item itemvalue="Application.CGIInterview" />
         <item itemvalue="Application.MediumArrayProblems" />
         <item itemvalue="Application.StudentDriverTwo" />
-        <item itemvalue="Application.NodeDriver" />
       </list>
     </recent_temporary>
   </component>
@@ -150,6 +159,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -171,7 +183,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/SecondInnings/src/linkedList/NodeDriver.java</url>
-          <line>19</line>
+          <line>21</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -180,8 +192,8 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Solutions/src/exceptions/InterviewOne.java</url>
-          <line>18</line>
+          <url>file://$PROJECT_DIR$/Solutions/src/streams/EYInterview.java</url>
+          <line>15</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">

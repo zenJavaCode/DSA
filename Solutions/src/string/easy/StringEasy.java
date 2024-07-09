@@ -113,6 +113,8 @@ public class StringEasy {
             }
         }
         if (result.equals(BigInteger.ZERO)) return "";
+        Long t = 1L;
+        t = Long.MIN_VALUE;
         return result.toString();
     }
 /*TODO Problem statement

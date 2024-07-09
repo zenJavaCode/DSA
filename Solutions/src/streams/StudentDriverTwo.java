@@ -19,10 +19,13 @@ public class StudentDriverTwo {
 
 
         /*TODO: 1- Find list of students whose first name starts with alphabet A*/
-        List<Student> aLetterNameList = list.stream().filter(s ->s.getFirstName().startsWith("A")).toList();
+      //  List<Student> aLetterNameList = list.stream().filter(s ->s.getFirstName().startsWith("A")).toList();
+
 
         /*TODO:  Group The Student By Department Names*/
         Map<String,List<Student>> departmentGroups = list.stream().collect(Collectors.groupingBy(Student::getDepartmantName));
+
+
 
         /*TODO Find the max age of student*/
         OptionalInt maxAge = list.stream().mapToInt(s -> s.getAge()).max();
@@ -67,12 +70,15 @@ public class StudentDriverTwo {
         Map<String,Double> averageByAge = list.stream().collect(Collectors.groupingBy(Student::getDepartmantName,Collectors.averagingInt(Student::getAge)));
 
         /*TODO Partition the students into two lists: one for male students and another for female students.*/
+        list.stream().collect(Collectors.partitioningBy(s -> s.getGender().equalsIgnoreCase("Male")));
 
         Map<Boolean,List<Student>> listGenderPartition = list.stream().collect(Collectors.partitioningBy(s -> s.getGender().equalsIgnoreCase("Male")));
         List<Student> male = listGenderPartition.get(true);
         List<Student> female = listGenderPartition.get(false);
 
 /* TODO Assuming each student has a list of courses they are enrolled in, create a flat list of all courses across all students.*/
+
+
         List<String> allDepartments = list.stream().map(Student ::getDepartmantName).distinct().toList();
 
 

@@ -1,5 +1,7 @@
 package linkedList;
 
+import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.Stack;
 
 public class NodeDriver {
@@ -27,11 +29,11 @@ public class NodeDriver {
         // Iterate through the array starting from the second element
         for (int i = 1; i < arr.length; i++) {
             // Create a new node with the value of the current element
-            Node newNode = new Node(arr[i]);
+            tail.next = new Node(arr[i]);
             // Link the new node to the current tail
-            tail.next = newNode;
+
             // Update the tail to be the newly added node
-            tail = newNode;
+            tail = tail.next;
         }
 
 
@@ -81,12 +83,7 @@ public class NodeDriver {
     }
 
 
-//    public Node deleteNodeAtKthPosition(Node node,int k) {
-//        if (node == null || node.next == null) { // Handle empty list or single-node list
-//            return null;
-//        }
-//        return null;
-//    }
+
 
 
     public Node middleNode(Node head) {
@@ -114,7 +111,7 @@ public class NodeDriver {
 
         Node slow = head;
         Node fast = head;
-        while (fast != null && fast.next != null && slow != null) {
+        while (fast != null && fast.next != null ) {
             fast = head.next.next;
             slow = head.next;
         }
@@ -126,24 +123,45 @@ public class NodeDriver {
 
     /*TODO Reverse a LinkedList*/
 
-//    public Node reverseLinkedList(Node head) {
-//
-//        Node temp = head;
-//
-//        Stack<Integer> stack = new Stack<>();
-//        while(temp.next != null){
-//
-//
-//            stack.push(temp.data);
-//            temp = temp.next;
-//        }
-//
-//        temp = head;
-//
-//        while(temp !=null){
-//            temp.data =
-//        }
-//
-//        return head;
-//    }
+    public Node reverseLinkedListUsingStack(Node head) {
+
+        if (head == null) {
+            return null;
+        }
+        Stack<Integer> stack = new Stack<>();
+        Node current = head;
+
+        // Push all nodes' data onto the stack
+        while (current != null) {
+            stack.push(current.data);
+            current = current.next;
+        }
+
+        // Initialize the head of the reversed list
+        Node reversedHead = new Node(stack.pop());
+        Node reversedCurrent = reversedHead;
+
+        // Pop from stack to create the reversed linked list
+        while (!stack.isEmpty()) {
+            reversedCurrent.next = new Node(stack.pop());
+            reversedCurrent = reversedCurrent.next;
+        }
+        return reversedHead;
+    }
+public static Node reverseLinkedList(Node head){
+
+        Node temp = head;
+        Node prev = null;
+        while(temp!=null){
+            Node front = temp.next;
+            temp.next = prev;
+            prev = temp;
+            temp =front;
+
+        }
+        return prev;
+
+}
+
+
 }
