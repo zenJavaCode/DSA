@@ -65,7 +65,7 @@ public class StreamRevision2 {
         List<Integer> listOfIntegers = Arrays.asList(71, 18, 42, 21, 67, 32, 95, 14, 56, 87);
 
         /*TODO Given a list of integers, separate odd and even numbers*/
-
+            listOfIntegers.stream().filter(i -> i % 2 == 0).collect(Collectors.toList());
 
     }
 }
