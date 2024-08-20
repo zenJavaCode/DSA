@@ -1,6 +1,7 @@
 package streams;
 
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class StudentDriverTwo {
@@ -19,50 +20,78 @@ public class StudentDriverTwo {
 
 
         /*TODO: 1- Find list of students whose first name starts with alphabet A*/
+
+        List<Student> letterNameList = list.stream().filter(s -> s.getFirstName().startsWith("A")).collect(Collectors.toList());
       //  List<Student> aLetterNameList = list.stream().filter(s ->s.getFirstName().startsWith("A")).toList();
 
 
         /*TODO:  Group The Student By Department Names*/
+        Map<String,List<Student>> group = list.stream().collect(Collectors.groupingBy(Student::getDepartmantName));
         Map<String,List<Student>> departmentGroups = list.stream().collect(Collectors.groupingBy(Student::getDepartmantName));
-
-
-
         /*TODO Find the max age of student*/
+
+        OptionalInt maxAgedStudent = list.stream().mapToInt(s -> s.getAge()).max();
         OptionalInt maxAge = list.stream().mapToInt(s -> s.getAge()).max();
 
         /*TODO: - Find the count of student in each department*/
+        Map<String,Long> studentCountEachDepartment = list.stream().collect(Collectors.groupingBy(Student::getDepartmantName,Collectors.counting()));
         Map<String,Long> studentCountInEachDept = list.stream().collect(Collectors.groupingBy(Student::getDepartmantName,Collectors.counting()));
 
         /*TODO:  Find the list of students whose age is less than 30*/
+
         List<Student> studentListBelow30 = list.stream().filter(s -> s.getAge() <30).toList();
 
         /*TODO Find the average age of male and female students*/
+
+        Map<String,Double> averageAgeByGender = list.stream().collect(Collectors.groupingBy(Student::getGender,Collectors.averagingDouble(Student::getAge)));
 
        OptionalDouble averageAgeMale = list.stream().filter(s ->s.getGender().equalsIgnoreCase("Male")).mapToInt(Student::getAge).average();
 
        Map<String, Double> averageAge = list.stream().collect(Collectors.groupingBy(Student::getGender,Collectors.averagingInt(Student::getAge)));
 
         /*TODO: - Find the count of student in each department*/
+
+        Map<String,Long> studentCountDepartmentWise = list.stream().collect(Collectors.groupingBy(Student::getDepartmantName,Collectors.counting()));
+
+
         Map<String, Long> count = list.stream().collect(Collectors.groupingBy(Student::getDepartmantName,Collectors.counting()));
 
 
         /*  TODO : *** Find the department who is having maximum number of students  ***  */
 
+        String departmentNameWithMaxStudent = list.stream().collect(Collectors.groupingBy(Student::getDepartmantName,Collectors.counting())).entrySet().stream().max(Map.Entry.comparingByValue()).map(Map.Entry::getKey).orElse(null);
+
+
+
         Map.Entry<String, Long> counts = list.stream().collect(Collectors.groupingBy(Student::getDepartmantName,Collectors.counting())).entrySet().stream().max(Map.Entry.comparingByValue()).get();
 
         /*TODO Find the average rank in all departments */
 
+
+        Map<String,Double> averageAgeInAllDepartments = list.stream().collect(Collectors.groupingBy(Student::getDepartmantName,Collectors.averagingDouble(Student::getAge)));
+
+
+
+
+
+
         Map<String, Double> averageRank = list.stream().collect(Collectors.groupingBy(Student::getDepartmantName,Collectors.averagingInt(Student::getRank)));
 
         /*TODO: Find the highest rank in each department*/
+
+        Map<String,Optional<Student>> highestRankStudentInEachDepartment = list.stream().collect(Collectors.groupingBy(Student::getDepartmantName,Collectors.minBy(Comparator.comparing(Student::getRank))));
         Map<String, Optional<Student>> highestRank = list.stream().collect(Collectors.groupingBy(Student::getDepartmantName,Collectors.minBy(Comparator.comparing(Student::getRank))));
 
         /*TODO Find the list of students and sort them by their rank */
+
+        List<Student> sortedList = list.stream().sorted(Comparator.comparing(Student::getRank)).toList();
 
         List<Student> sortedByRankList = list.stream().sorted(Comparator.comparing(Student::getRank)).toList();
 
         /*TODO Find the student who has second rank*/
 
+
+        Student secondRankHolder = list.stream().sorted(Comparator.comparing(Student::getRank)).skip(1).findFirst().get();
         Student secondRank = list.stream().sorted(Comparator.comparing(Student::getRank)).skip(1).findFirst().get();
 
         /*TODO Group the students by their branch of study (e.g., Mechanical Engineering, Computer Engineering, etc.) and calculate the average age for each group.*/
@@ -70,6 +99,12 @@ public class StudentDriverTwo {
         Map<String,Double> averageByAge = list.stream().collect(Collectors.groupingBy(Student::getDepartmantName,Collectors.averagingInt(Student::getAge)));
 
         /*TODO Partition the students into two lists: one for male students and another for female students.*/
+
+
+        Map<Boolean,List<Student>> listGenderPartitions   = list.stream().collect(Collectors.partitioningBy(s -> s.getGender().equalsIgnoreCase("Male")));
+        List<Student> maleList = listGenderPartitions.get(true);
+
+
         list.stream().collect(Collectors.partitioningBy(s -> s.getGender().equalsIgnoreCase("Male")));
 
         Map<Boolean,List<Student>> listGenderPartition = list.stream().collect(Collectors.partitioningBy(s -> s.getGender().equalsIgnoreCase("Male")));
@@ -77,6 +112,19 @@ public class StudentDriverTwo {
         List<Student> female = listGenderPartition.get(false);
 
 /* TODO Assuming each student has a list of courses they are enrolled in, create a flat list of all courses across all students.*/
+
+
+
+
+//        Map<String, Long> coursesWithCount = list.stream()
+//                .flatMap(student -> student.getCourses().stream())
+//                .collect(Collectors.groupingBy(
+//                        Function.identity(),
+//                        Collectors.counting()
+//                ));
+
+
+
 
 
         List<String> allDepartments = list.stream().map(Student ::getDepartmantName).distinct().toList();
