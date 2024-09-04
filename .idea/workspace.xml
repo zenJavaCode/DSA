@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c774faf7-a11f-4a0c-9a74-2cf23e1717d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/shreyansh/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/shreyansh/MonitorLockExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/shreyansh/MonitorThread1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/shreyansh/MultithreadingByShreyansh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/shreyansh/MultithreadingByShreyanshThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/shreyansh/ProduceTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/shreyansh/realExample/ConsumeTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/shreyansh/realExample/SharedResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/shreyansh/realExample/sharedExample/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/shreyansh/realExample/sharedExample/SharedResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/google-java-format.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/shreyansh/assignment/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solutions/src/multithreading/shreyansh/assignment/SharedResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Solutions/exceptions/InterviewOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Solutions/exceptions/InterviewOne.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Solutions/streams/EYInterview.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Solutions/streams/EYInterview.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Solutions/streams/StreamRevision.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Solutions/streams/StreamRevision.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Solutions/streams/StreamRevision2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Solutions/streams/StreamRevision2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Solutions/streams/StudentDriverTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Solutions/streams/StudentDriverTwo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +67,7 @@
     "Application.StudentDriverTwo.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "multithreading",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/pjain32/Documents/DSA",
@@ -194,7 +180,7 @@
       <workItem from="1722569144255" duration="803000" />
       <workItem from="1724120300695" duration="7098000" />
       <workItem from="1724503712006" duration="149000" />
-      <workItem from="1725159667381" duration="4317000" />
+      <workItem from="1725159667381" duration="9797000" />
     </task>
     <servers />
   </component>
