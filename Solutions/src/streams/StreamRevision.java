@@ -78,8 +78,11 @@ public class StreamRevision {
 
      //   Here's a Java 8 program that finds duplicate elements and their count from a given ArrayList of Strings:
 
+        Map<String,Long> data = inputArr.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting())).entrySet().stream()
+                                .filter(entry -> entry.getValue()>1).collect(Collectors.toMap(Map.Entry::getKey,Map.Entry::getValue));
+
         Map<String,Long> map = inputArr.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting())).entrySet().stream()
-                                  .filter(entry ->entry.getValue()>1).collect(Collectors.toMap(Map.Entry::getKey,Map.Entry::getValue));
+                               .filter(entry ->entry.getValue()>1).collect(Collectors.toMap(Map.Entry::getKey,Map.Entry::getValue));
 
         map.forEach((key, value) -> System.out.println(key + ": " + value));
 
