@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c774faf7-a11f-4a0c-9a74-2cf23e1717d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SecondInnings/src/multithreading/MultiThreadingBasics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SecondInnings/src/streams/StreamsFinalRevision.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Solutions/src/exceptions/FocusMateOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecondInnings/src/StriverSDESheet/arrays/Arrays.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondInnings/arrays/ArrayRevisionTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondInnings/arrays/ArrayRevisionTwo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondInnings/comparable/SuperHero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondInnings/comparable/SuperHero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondInnings/linkedList/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondInnings/linkedList/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondInnings/linkedList/NodeDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondInnings/linkedList/NodeDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondInnings/linkedList/ReverseLinkedListUsingStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondInnings/linkedList/ReverseLinkedListUsingStack.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +41,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Arrays.executor": "Debug",
     "Application.ArraysBasic.executor": "Debug",
     "Application.BasicRecursionProblems.executor": "Run",
     "Application.CGIInterview.executor": "Run",
@@ -74,7 +68,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MultiThreadingBasics">
+  <component name="RunManager" selected="Application.Arrays">
+    <configuration name="Arrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StriverSDESheet.arrays.Arrays" />
+      <module name="SecondInnings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StriverSDESheet.arrays.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CGIInterview" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="basic.CGIInterview" />
       <module name="Solutions" />
@@ -94,19 +101,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="streams.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MediumArrayProblems" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="arrays.MediumArrayProblems" />
-      <module name="Solutions" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="arrays.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Arrays" />
         <item itemvalue="Application.MultiThreadingBasics" />
         <item itemvalue="Application.EYInterview" />
         <item itemvalue="Application.StringUpperCaseTransformer" />
         <item itemvalue="Application.CGIInterview" />
-        <item itemvalue="Application.MediumArrayProblems" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +194,11 @@
           <url>file://$PROJECT_DIR$/Solutions/src/streams/EYInterview.java</url>
           <line>15</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/SecondInnings/src/StriverSDESheet/arrays/Arrays.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/SecondInnings/src/arrays/MathsBasic.java</url>
